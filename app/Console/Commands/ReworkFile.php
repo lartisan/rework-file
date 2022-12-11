@@ -74,6 +74,11 @@ class ReworkFile extends Command
         return Command::SUCCESS;
     }
 
+    /**
+     * Convert the given csv file to multidimensional array
+     *
+     * @return array
+     */
     private function convertCsvToArray(): array
     {
         $usersArray = [];
@@ -91,6 +96,7 @@ class ReworkFile extends Command
 
     /**
      * Adds the column headers as keys for the users' values
+     *
      * @return array
      */
     private function transformedUsersArray(): array
@@ -108,6 +114,8 @@ class ReworkFile extends Command
     }
 
     /**
+     * Get the index for a given email address
+     *
      * @param string $email
      * @return int|string|null
      */
@@ -123,6 +131,8 @@ class ReworkFile extends Command
     }
 
     /**
+     * Get the index for a filter
+     *
      * @param string $filter
      * @return int|string|null
      */
@@ -138,6 +148,8 @@ class ReworkFile extends Command
     }
 
     /**
+     * Replace the user's values with the corresponding ids
+     *
      * @param array $userData
      * @return array
      */
