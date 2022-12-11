@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Console\Commands;
+namespace Tests\Unit;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Exception\RuntimeException;
