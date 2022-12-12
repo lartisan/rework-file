@@ -23,4 +23,4 @@ php artisan key:generate
 php artisan rework:file ./public/users.csv 
 ```
 
-The generated `users.json` will be generated in the `./public` folder.
+The generated `users.json` will be saved in the `./public` folder.
